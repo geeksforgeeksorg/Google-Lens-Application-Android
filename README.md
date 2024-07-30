@@ -1,4 +1,5 @@
 # Google-Lens-Application-Android
 
-https://github.com/user-attachments/assets/a4aada7c-8f0f-471b-8e01-91827743837c
+
+https://github.com/user-attachments/assets/a95b40c9-8b44-4b0d-8c63-8b9ffc25c14f
 
