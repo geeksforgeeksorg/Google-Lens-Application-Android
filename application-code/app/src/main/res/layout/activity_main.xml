@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--image view for displaying our image-->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/idLLButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:orientation="horizontal">
+
+        <!--button for capturing our image-->
+        <Button
+            android:id="@+id/snapbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:lines="2"
+            android:text="Snap"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!--button for detecting the objects-->
+        <Button
+            android:id="@+id/idBtnSearchResuts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:lines="2"
+            android:text="Get Search Results"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!--recycler view for displaying the list of result-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVSearchResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idLLButtons" />
+
+</RelativeLayout>
