@@ -1,9 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.GoogleLensApplication" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Demo" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<!--         <item name="colorPrimary">@android:color/holo_green_dark</item>-->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+<!--        <item name="android:statusBarColor">@color/white</item>-->
+<!--        <item name="android:windowLightStatusBar">true</item>-->
     </style>
 
-    <style name="Theme.GoogleLensApplication" parent="Base.Theme.GoogleLensApplication" />
+    <style name="Theme.Demo" parent="Base.Theme.Demo" />
+
 </resources>
