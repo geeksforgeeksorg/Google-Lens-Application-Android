@@ -5,6 +5,4 @@ For API Creation use: <a href="https://serpapi.com/search-api">Click Here</a>
 
 For Learning more about the topic: <a href="https://www.geeksforgeeks.org/how-to-create-google-lens-application-in-android/">Click Here</a>
 
-
-https://github.com/user-attachments/assets/a95b40c9-8b44-4b0d-8c63-8b9ffc25c14f
-
+https://github.com/user-attachments/assets/3c4021e8-06d1-4b9e-8a03-d7e3c1bcb7f7

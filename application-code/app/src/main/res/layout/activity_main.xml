@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <!--image view for displaying our image-->
@@ -11,45 +13,41 @@
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_margin="16dp"
         android:scaleType="centerCrop" />
 
     <LinearLayout
-        android:id="@+id/idLLButtons"
+        android:id="@+id/layoutButtons"
+        style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/image"
         android:orientation="horizontal">
 
         <!--button for capturing our image-->
         <Button
-            android:id="@+id/snapbtn"
+            android:id="@+id/snap"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:layout_marginTop="30dp"
+            android:layout_margin="16dp"
             android:layout_weight="1"
-            android:lines="2"
             android:text="Snap"
-            android:textAllCaps="false"
+            android:padding="16dp"
+            android:lines="2"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <!--button for detecting the objects-->
         <Button
-            android:id="@+id/idBtnSearchResuts"
+            android:id="@+id/getSearchResults"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:layout_marginTop="30dp"
+            android:layout_margin="16dp"
             android:layout_weight="1"
+            android:padding="16dp"
             android:lines="2"
             android:text="Get Search Results"
-            android:textAllCaps="false"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -57,9 +55,10 @@
 
     <!--recycler view for displaying the list of result-->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/idRVSearchResults"
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/idLLButtons" />
+        tools:listitem="@layout/search_result_rv_item"
+        android:layout_margin="16dp"/>
 
-</RelativeLayout>
+</LinearLayout>
